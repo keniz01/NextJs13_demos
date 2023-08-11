@@ -2,16 +2,16 @@
 
 import { AppSessionProvider } from '../../providers/AppSessionProvider';
 import './globals.css'
- 
+
 function RootLayout({ children }: { children: React.ReactNode }) {
     return (
-        <html>
+        <html lang="en">
             <head>
                 <title>Test App</title>
             </head>
             <body>
                 <AppSessionProvider>
-                    <>{children}</>
+                    {children}
                 </AppSessionProvider>
             </body>
         </html>
