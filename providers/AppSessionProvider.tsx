@@ -17,12 +17,12 @@ const theme: ThemeConfig = {
 
 export const AppSessionProvider = ({ children }: Props) => {
     return (
-        <ConfigProvider theme={theme}>
-            <SessionProvider refetchOnWindowFocus={false} >
+        <SessionProvider refetchOnWindowFocus={false}>
+            <ConfigProvider theme={theme}>
                 <ErrorBoundary>
-                    <>{children} </>
+                    {children}
                 </ErrorBoundary>
-            </SessionProvider>
-        </ConfigProvider>
+            </ConfigProvider>
+        </SessionProvider>
     )
 };
